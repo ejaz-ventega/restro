@@ -1,0 +1,787 @@
+/* --- RESET/NORMALIZE ---*/
+/* body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+pre,
+dl,
+dd,
+blockquote,
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0;
+}
+legend {
+  padding: 0;
+}
+fieldset,
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+body {
+  line-height: 1;
+}
+main,
+figure,
+figcaption,
+img {
+  display: block;
+} /*--- <main> for IE 11 ---*/
+/* img {
+  max-width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+}
+fieldset {
+  border: 0;
+}
+input,
+textarea,
+select,
+button {
+  display: block;
+  max-width: 100%;
+  color: inherit;
+}
+label {
+  display: table;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="search"] {
+  -webkit-appearance: none;
+} /*--- for Safari (add/remove types as needed) ---*/
+/* button {
+  line-height: inherit;
+}
+button::-moz-focus-inner {
+  border: 0;
+} --- for Firefox ---  */
+@import url("https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon:ital@1&family=Luxurious+Roman&family=Qwitcher+Grypen:wght@700&family=The+Nautigal&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+.main {
+  background-image: url("images/first1.png");
+  background-color: rgb(102 88 88);
+  background-blend-mode: hard-light;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  /* background-size: 100% 100%; */
+  position: relative;
+  animation: change 60s linear infinite;
+  transition: left 1s linear;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+@keyframes change {
+  0% {
+    background-image: url("images/first2.jpg");
+  }
+  50% {
+    background-image: url("images/first2.jpg");
+  }
+  51% {
+    background-image: url("images/first1.png");
+  }
+  100% {
+    background-image: url("images/first1.png");
+  }
+}
+header {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 70px;
+  position: fixed;
+  width: 100%;
+  z-index: 15;
+}
+.nav {
+  /* background: rgb(231, 228, 228);
+  background: linear-gradient(
+    0deg,
+    rgba(250, 247, 247, 0.968) 2%,
+    rgba(140, 139, 139, 0.9676724137931034) 10%,
+    rgba(22, 21, 21, 1) 55%
+  ); */
+  width: 100%;
+}
+.nav ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+.nav ul li {
+  text-transform: uppercase;
+  font-family: "Luxurious Roman", cursive;
+  color: rgb(247, 172, 82);
+  list-style-type: none;
+  margin-top: 2%;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: rgb(247, 172, 82);
+  font-size: 15px;
+}
+.nav ul li:hover {
+  transform: scale(1.3);
+  color: #f8bf74;
+  cursor: pointer;
+}
+.heading {
+  color: #d1892a;
+  font-family: "The Nautigal", cursive;
+  font-size: 50px;
+  margin: 0px;
+  cursor: pointer;
+}
+.first {
+  /* background-image: url("images/first2.jpg"); */
+  width: 100%;
+  background-size: 100%;
+  min-height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: relative;
+}
+.first_para {
+  position: absolute;
+  top: 20%;
+  /* margin: 2rem 10rem; */
+  margin: 2% 15%;
+}
+.first_para h3 {
+  color: #f1af57;
+  font-size: 90px;
+  /* font-family: "Luxurious Roman", cursive; */
+  font-family: "Qwitcher Grypen", cursive;
+  font-weight: bold;
+}
+.first_para p {
+  font-family: "The Nautigal", cursive;
+  margin: 0.25rem 0rem;
+  font-size: 70px;
+  color: #f1af57;
+}
+.scroll {
+  position: absolute;
+  bottom: 1.5rem;
+  position: absolute;
+  left: 50%;
+  color: #ffe7c8;
+  font-size: 80px;
+  transform: rotate(90deg);
+  animation: up ease-in-out infinite 1s;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+@keyframes up {
+  0% {
+    bottom: 1.5rem;
+  }
+  100% {
+    bottom: 1rem;
+  }
+}
+
+/* ------------------------------------>    Second   Page   <------------------------------------- */
+
+.second {
+  background-image: url("images/stylo.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(133, 115, 115);
+  background-blend-mode: overlay;
+  font-family: "IM Fell French Canon", serif;
+  position: relative;
+  width: 100%;
+}
+.restro {
+  position: relative;
+  padding: 10% 30%;
+  height: 70vh;
+  box-sizing: border-box;
+}
+.restro #del {
+  font-size: 70px;
+  color: #ffab3e;
+  font-family: "The Nautigal", cursive;
+}
+.restro p {
+  font-size: 75px;
+  color: #ffab3e;
+  font-family: "The Nautigal", cursive;
+}
+
+/*---------------------------------------->  Third  Page <---------------------------------------- */
+.third {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-color: #fefefe;
+  width: 100%;
+  /* background-color: yellowgreen; */
+  padding: 1%;
+  box-sizing: border-box;
+}
+.section {
+  height: 40vh;
+  /* background-color: yellow; */
+  display: flex;
+}
+.img {
+  /* background-color: violet; */
+  height: 100%;
+  width: 30%;
+}
+.img img {
+  width: 100%;
+  height: -webkit-fill-available;
+}
+.img2 {
+  justify-self: flex-end;
+  /* background-color: violet; */
+  height: 100%;
+  width: 30%;
+}
+.img2 img {
+  width: 100%;
+  height: -webkit-fill-available;
+}
+.con {
+  /* background-color: indianred; */
+  height: 100%;
+  width: 70%;
+  padding: 3%;
+  box-sizing: border-box;
+}
+.con p {
+  font-family: "The Nautigal", cursive;
+  font-size: 35px;
+}
+.con p::first-letter {
+  font-size: 50px;
+}
+/* --------------------------------------> Fourth segment <--------------------------------------- */
+.menu {
+  background-color: #fefefe;
+  width: 100%;
+  height: auto;
+}
+.card {
+  position: relative;
+  margin: 2rem 1rem;
+  /* background-color: yellow; */
+  width: 28%;
+  display: inline-flex;
+  cursor: pointer;
+  overflow: hidden;
+}
+.card .card_img {
+  height: 100%;
+  width: 100%;
+  /* background-color: violet; */
+  transition: 0.3s linear;
+  overflow: hidden;
+}
+.card .card_img img {
+  transition: 0.8s ease-in;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 100%;
+}
+.card .description {
+  background-color: rgba(0, 0, 0, 0.4);
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  /* background-color: whitesmoke; */
+  display: none;
+}
+.card .description p {
+  font-family: "The Nautigal", monospace;
+  font-size: xx-large;
+  color: #d1892a;
+  text-align: center;
+  transition: 0.4s linear;
+}
+.card:hover .description {
+  display: block;
+  transform: scale(1.2);
+}
+.card:hover .card_img img {
+  transform: scale(1.5);
+}
+#seafood {
+  display: none;
+  background-color: #f6f6f7;
+  transition: 5s ease-in;
+}
+#pakistani_food {
+  background-color: #f6f6f7;
+  transition: 5s ease-in;
+}
+/* -------------------------------------> Fifth Segment <----------------------------------------- */
+
+.reservation {
+  width: 100%;
+  background-image: url("images/floral.jpeg");
+  background-size: 100% 100%;
+  min-height: 38rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.timing {
+  font-family: "Luxurious Roman", cursive;
+  margin-left: 2rem;
+}
+.timing input {
+  padding: 2px 14px;
+  width: 6rem;
+  height: 1.85rem;
+  border: black 1px solid;
+  border-radius: 3px;
+
+  margin: 2px 5px;
+}
+.date {
+  position: absolute;
+  left: 4rem;
+}
+.time {
+  position: absolute;
+  left: 13rem;
+}
+.seats {
+  position: absolute;
+  left: 23rem;
+}
+.info input {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 25rem;
+  height: 1rem;
+  border: 1px solid black;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+  border-radius: 3px;
+}
+.reservation p {
+  margin: 1rem;
+}
+.btn {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0rem;
+  border: 3px solid black;
+  background-color: black;
+  color: white;
+  width: 10rem;
+  height: 3rem;
+  font-family: "Luxurious Roman", cursive;
+  font-size: 16px;
+  transition: 0.2s linear;
+}
+.btn:hover {
+  background-color: white;
+  color: black;
+}
+
+/* -------------------------------------> Seventh segment <--------------------------------------- */
+
+.order {
+  min-height: 32rem;
+  width: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  background-image: url("images/floral.jpeg");
+  background-size: cover;
+  top: -2rem;
+}
+.sign {
+  /* background-color: blue; */
+  width: 60%;
+  height: 100%;
+}
+.sign .heading {
+  margin-left: 1rem;
+}
+.details {
+  margin-left: 2rem;
+}
+.details input {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 25rem;
+  height: 1rem;
+  border: 1px solid black;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+  outline: black;
+  border-radius: 3px;
+}
+footer {
+  background-image: url("images/foot.jpg");
+  background-size: cover;
+}
+.footer {
+  color: white;
+  height: auto;
+  padding: 60px;
+  text-align: center;
+}
+
+/*-----------------------------------> Media Queries <-------------------------------------------*/
+@media only screen and (min-width: 1100px) and (max-width: 1500px) {
+  header {
+    height: 100px;
+  }
+  .heading {
+    font-size: 70px;
+  }
+  .nav ul li a {
+    font-size: 25px;
+  }
+  .first_para {
+    top: 30%;
+  }
+  .first_para h3 {
+    font-size: 140px;
+  }
+  .first_para p {
+    font-size: 120px;
+  }
+  .scroll {
+    font-size: 100px;
+  }
+  .restro #del {
+    font-size: 100px;
+  }
+  .restro p {
+    font-size: 85px;
+  }
+  .second {
+    height: 55vh;
+  }
+  .con p {
+    font-size: 3rem;
+  }
+  .con p::first-letter {
+    font-size: 2em;
+  }
+  .img {
+    width: 40%;
+  }
+  .img2 {
+    width: 40%;
+  }
+  .third .parts #img {
+    position: inherit;
+  }
+  #img2::before {
+    background: none;
+  }
+  #part {
+    margin-top: 5%;
+  }
+  .card {
+    width: 30%;
+  }
+  .third .parts #img2 {
+    width: 32%;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .info input {
+    width: 35%;
+    height: 3rem;
+    font-size: 18px;
+  }
+  #seats {
+    width: 8.5%;
+    height: 2rem;
+  }
+  #date {
+    width: 8.9%;
+    height: 2rem;
+  }
+  #time {
+    width: 8.5%;
+    height: 2rem;
+  }
+  .details input {
+    width: 65%;
+    height: 3rem;
+  }
+  .third .parts .con {
+    padding: 80px 32px;
+    font-size: 42px;
+  }
+  .btn {
+    width: 12rem;
+    height: 3rem;
+    font-size: 20px;
+  }
+  .third .parts {
+    margin-left: 10%;
+  }
+}
+@media only screen and (min-width: 540px) and (max-width: 718px) {
+  .nav ul li a {
+    font-size: 12px;
+  }
+  .first_para h3 {
+    font-size: 85px;
+  }
+  .first_para p {
+    font-size: 60px;
+  }
+  .restro {
+    padding: 10% 25%;
+  }
+  .restro #del {
+    font-size: 65px;
+  }
+  .restro p {
+    font-size: 55px;
+  }
+  .section {
+    height: 45vh;
+  }
+  .img {
+    width: 40%;
+  }
+  .img2 {
+    width: 40%;
+  }
+  .con p::first-letter {
+    font-size: 1.5em;
+  }
+  .con p {
+    font-size: 2rem;
+  }
+  .card {
+    margin: 0rem 0.5em;
+  }
+  .card .description p {
+    font-size: 20px;
+  }
+}
+@media only screen and (min-width: 380px) and (max-width: 539px) {
+  header {
+    height: 55px;
+  }
+  .nav ul li a {
+    font-size: 10px;
+  }
+  .first_para h3 {
+    font-size: 80px;
+  }
+  .first_para p {
+    font-size: 60px;
+  }
+  .restro {
+    padding: 10% 25%;
+    height: 40vh;
+  }
+  .restro #del {
+    font-size: 60px;
+  }
+  .restro p {
+    font-size: 60px;
+  }
+  .section {
+    height: auto;
+    display: block;
+  }
+  .img {
+    height: 30vh;
+    width: 60%;
+    margin-left: 20%;
+  }
+  .con {
+    padding: 1%;
+    margin-left: 15%;
+  }
+  .con p {
+    font-size: 28px;
+  }
+  .img2 {
+    height: 29vh;
+    width: 60%;
+    margin-left: 20%;
+  }
+  .card {
+    width: 60%;
+    margin-left: 20%;
+    display: block;
+    margin: 5% 20%;
+  }
+  .timing input {
+    width: 16%;
+  }
+  .date {
+    left: 3rem;
+  }
+  .seats {
+    left: 16rem;
+  }
+  .time {
+    left: 10rem;
+  }
+  .info input {
+    width: 80%;
+  }
+  .details input {
+    width: 143%;
+  }
+  .card .description p {
+    font-size: 24px;
+  }
+}
+@media only screen and (max-width: 379px) {
+  header {
+    height: 45px;
+  }
+  .nav ul li a {
+    font-size: 9px;
+  }
+  .nav ul li {
+    margin-top: 4%;
+  }
+  .heading {
+    font-size: 40px;
+  }
+  .first_para {
+    margin: 2% 10%;
+  }
+  .first_para h3 {
+    font-size: 75px;
+  }
+  .first_para p {
+    font-size: 60px;
+  }
+  .restro {
+    height: 42vh;
+    padding: 8% 20%;
+  }
+  .restro #del {
+    font-size: 45px;
+  }
+  .restro p {
+    font-size: 40px;
+  }
+  .section {
+    height: auto;
+    display: block;
+  }
+  .img {
+    height: 35vh;
+    width: 60%;
+    margin-left: 20%;
+  }
+  .con {
+    padding: 1%;
+    margin-left: 15%;
+  }
+  .con p {
+    font-size: 25px;
+  }
+  .img2 {
+    height: 35vh;
+    width: 60%;
+    margin-left: 20%;
+  }
+  .card {
+    width: 60%;
+    margin-left: 20%;
+    display: block;
+    margin: 5% 20%;
+  }
+  #time {
+    width: 14%;
+  }
+  #seats {
+    width: 14%;
+  }
+  #date {
+    width: 14%;
+  }
+  .date {
+    left: 2rem;
+  }
+  .time {
+    left: 8rem;
+  }
+  .seats {
+    left: 13rem;
+  }
+  .details input {
+    width: auto;
+  }
+  .info input {
+    width: auto;
+  }
+}
+@media only screen and (max-width: 254px) {
+  #time {
+    width: 5%;
+  }
+  #seats {
+    width: 5%;
+  }
+  #date {
+    width: 5%;
+  }
+  .date {
+    left: 2rem;
+  }
+  .time {
+    left: 5rem;
+  }
+  .seats {
+    left: 9rem;
+  }
+  .details input {
+    width: 170%;
+  }
+  .info input {
+    width: 90%;
+  }
+}
